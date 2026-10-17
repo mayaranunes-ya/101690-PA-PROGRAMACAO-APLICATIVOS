@@ -5,6 +5,7 @@ const somar = (a, b) => {   //Usado para mais de uma operação. O {} é usado p
 // Faz a mesma coisa que a função acima, mas de forma mais simplificada
 const subtrair = (a, b) => a - b
 
+//chamar
 const soma = somar(10, 20)
 const subtracao = subtrair(20, 10)
 

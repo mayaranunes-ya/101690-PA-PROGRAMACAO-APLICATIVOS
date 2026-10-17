@@ -5,12 +5,14 @@ switch (opcao) {
         console.log('opção 1')
         
         break;
+
     case 2:
         console.log('opção 2')
         
         break;
+        
     case 3:
-        console.long('opção 3')
+        console.log('opção 3')
         
         break;
 
