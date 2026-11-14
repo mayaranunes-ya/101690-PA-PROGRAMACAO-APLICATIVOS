@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #f8f0df;
+  background: #101b32;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-night: #101b32;
+  --color-blue: #1b2b4a;
+  --color-gold: #d7b66d;
+  --color-cream: #f8f0df;
+  --color-rose: #a83b48;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0, rgb(55 72 105 / 55%), transparent 48rem),
+    linear-gradient(145deg, #101b32 0%, #172643 52%, #10182b 100%);
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 85%, rgb(168 59 72 / 12%), transparent 26rem),
+    radial-gradient(ellipse at 90% 30%, rgb(215 182 109 / 9%), transparent 30rem);
+  content: '';
+  pointer-events: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration-color: rgb(215 182 109 / 45%);
+  text-underline-offset: 0.2em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+a:hover {
+  color: #f1d998;
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 3px solid #f1d998;
+  outline-offset: 4px;
+}
+
+::selection {
+  color: var(--color-night);
+  background: #e6ca8b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
